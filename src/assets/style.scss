@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
 :root {
   --primary: #f09300;
   --gray: #b1b1b1;
+  --borderColor: #6b3a05;
+  --borderSize: 2px;
+  --boardSpacing: 3.5vmin;
 }
 
 body,
@@ -13,15 +18,22 @@ table {
 }
 
 body {
-  background: white;
+  background: var(--primary);
+  font-size: 12px;
+  font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
 
   img {
     display: block;
   }
+
 }
 
 footer {
   background: var(--gray);
+  position: relative;
+  z-index: 3;
 
   h3 {
     padding: 0;
@@ -46,7 +58,6 @@ footer {
 
 header {
   position: relative;
-  background: var(--primary);
 
   .banner {
     width: 100%;
@@ -59,6 +70,8 @@ header {
     width: 90%;
     display: inline-flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     position: relative;
     left: 50%;
     bottom: 0%;
@@ -86,6 +99,18 @@ header {
   }
 }
 
+.back {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url('../images/icon-goback.png') no-repeat 0 0;
+  background-size: contain;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9;
+}
+
 .ribbon {
   position: absolute;
   top: 0;
@@ -99,6 +124,7 @@ header {
 .slogan {
   padding: 1%;
   padding-top: calc(1% + 44px);
+  background: white;
 
   img {
     width: 80%;
@@ -107,28 +133,29 @@ header {
 }
 
 main {
-  background: var(--primary);
   position: relative;
 
-}
+  section {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
-.mainContent {
   .ribbon {
-    position: absolute;
     z-index: 1;
     background-image: url("../images/ribbon-02.png");
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: 50% 0%;
-    height: calc(100% + 6vmax * 3);
+    height: calc(100% + 20vmax);
   }
+}
 
+.mainContent {
   section {
     width: 90%;
-    margin: 0 auto;
     padding-bottom: 6vmax;
-    position: relative;
-    z-index: 2;
   }
 
   img {
@@ -143,43 +170,127 @@ main {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, calc(-6vmax - 22%));
+    transform: translate(-50%, calc(-6vmax - 30%));
     z-index: 4;
     width: 38%;
   }
 }
 
 .gameListContent {
-  section {
-    display: flex;
-    align-items: center;
-    width: 90%;
+  padding: 0 5% 3vmax;
+
+  .searchBar {
+    border-radius: 50px;
+    overflow: hidden;
+    max-width: 1280px;
     margin: 0 auto;
-    outline: 1px solid red;
+    padding: 6px;
+    background: url('../images/bg-01.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 1rem;
+
+    label {
+      background: white;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      width: calc(100% - 1rem * 2);
+    }
+
+    span {
+      white-space: nowrap;
+      display: block;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      outline: 0;
+      border: 0;
+      font-size: 1rem;
+      padding-left: 1rem;
+    }
   }
 
-  .gameInfoImg {
+  .gameBoard {
+    position: relative;
+    display: flex;
+    padding: var(--boardSpacing);
+    margin: 3vmax auto;
+    background: #fadd94 url('../images/bg-board_02.jpg') no-repeat 50% var(--boardSpacing);
+    background-size: 100% calc(100% - var(--boardSpacing)* 2);
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: calc(var(--boardSpacing) + 1px);
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: 0;
+      background: url('../images/bg-board_01.jpg') no-repeat 0 0;
+      background-size: 100% 100%;
+    }
+
+    &::after {
+      bottom: 0;
+      background: url('../images/bg-board_03.jpg') no-repeat 0 100%;
+      background-size: 100% 100%;
+    }
+  }
+
+  .gameBrand {
     width: calc(100% / 3);
+    padding: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     img {
       width: 100%;
+    }
+
+    a {
+      width: 70%;
+      margin-top: 1rem;
     }
   }
 
   table {
     width: 100%;
+    border-collapse: collapse;
   }
 
-  td, th {
-    padding: 0.5rem;
-    vertical-align: top;
+  th,
+  td {
+    padding: 1rem 0.5rem;
+    vertical-align: middle;
     color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgba(black, 0.5);
+    font-weight: 500;
+    text-shadow: 1px 2px 3px rgba(black, 0.9);
   }
 
   th {
     white-space: nowrap;
+    width: calc(100% / 3);
+    border-left: var(--borderSize) solid var(--borderColor);
+    border-right: var(--borderSize) solid var(--borderColor);
+  }
+
+  tr:not(:first-child) {
+    th, td {
+      border-top: var(--borderSize) solid var(--borderColor);
+    }
   }
 
   tr:first-child td {
@@ -197,10 +308,18 @@ main {
       margin-left: 0.5rem;
     }
   }
-  
+
 }
 
 @media (min-width: 768px) {
+  :root {
+    --borderSize: 3px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
   .slogan {
     padding-top: 1%;
   }
@@ -221,6 +340,22 @@ main {
 
       li {
         padding: 0;
+      }
+    }
+  }
+
+  .gameListContent {
+    th,
+    td {
+      padding: 1rem 1.5rem;
+    }
+
+    .gameBrand {
+      padding: 0 2rem;
+  
+      a {
+        width: 60%;
+        margin-top: 1.5rem;
       }
     }
   }

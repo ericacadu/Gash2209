@@ -1,4 +1,4 @@
-export const listContent = [
+export const gameData = [
     {
         title: "明星三缺一",
         time: "111/10/4 - 111/11",
@@ -6,6 +6,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-01.png",
         url: ""
     },{
         title: "幸運拉霸GO",
@@ -14,6 +15,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-02.png",
         url: ""
     },{
         title: "滿貫大亨",
@@ -22,6 +24,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "「歡慶豪華寶箱」內容：抽大獎滿貫特製黃金金牌卡(價值8,888紅鑽)！其他獎勵包含：黃金卡、紅鑽、隨機虛寶卡，獎勵隨機取一。<br><br>「歡慶拉霸幣禮盒」內容：歡慶拉霸幣1~10個，數量隨機獲得。蒐集指定數量可至遊戲內拉霸機轉動獲得獎勵！大獎台銀幻彩條塊卡(10公克)(價值19,000紅鑽)！",
+        logo: "logo-03.png",
         url: ""
     },{
         title: "金好運",
@@ -30,13 +33,16 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-04.png",
         url: ""
     },{
         title: "至尊娛樂城-黃金版",
         time: "111/10/4 - 111/11",
         content: "1000 →儲值回饋10%至尊幣點數<br>加碼再送【GASH金福袋】×1<br><br>3000 →儲值回饋10%至尊幣點數<br>加碼再送【GASH金福袋】×3<br><br>5000 →儲值回饋10%至尊幣點數<br>加碼再送【GASH鑽福袋】×2<br><br>10000 →儲值回饋10%至尊幣點數<br>加碼再送【GASH鑽福袋】×4<br><br>20000 →儲值回饋10%至尊幣點數<br>加碼再送【GASH鑽福袋】×8",
+        awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-05.png",
         url: ""
     },{
         title: "多樂米麻將館",
@@ -45,6 +51,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-06.png",
         url: ""
     },{
         title: "土撥鼠老虎機",
@@ -53,6 +60,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-07.png",
         url: ""
     },{
         title: "王牌俱樂部",
@@ -61,6 +69,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-08.png",
         url: ""
     },{
         title: "角子共玩",
@@ -69,6 +78,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-09.png",
         url: ""
     },{
         title: "錢多多娛樂城",
@@ -77,6 +87,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-10.png",
         url: ""
     },{
         title: "大福娛樂城",
@@ -85,6 +96,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-11.png",
         url: ""
     },{
         title: "老子有錢",
@@ -93,6 +105,7 @@ export const listContent = [
         awards: "儲值立即送",
         exp: "儲值後7天遊戲內領取",
         notice: "※詳情請以遊戲官網或粉絲團公告為主",
+        logo: "logo-12.png",
         url: ""
     }
 ]
