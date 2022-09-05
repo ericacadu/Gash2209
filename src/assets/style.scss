@@ -39,10 +39,12 @@ footer {
     padding: 0;
     margin: 0;
     margin-bottom: 0.5rem;
+    font-size: 0.8rem;
   }
 
   ol {
     padding-left: 1.2rem;
+    font-size: 0.8rem;
   }
 
   div {
@@ -325,8 +327,13 @@ main {
   }
 
   footer {
+    h3 {
+      font-size: 1rem;
+    }
+
     ol {
       line-height: 2;
+      font-size: 1rem;
     }
   }
 }

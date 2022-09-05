@@ -36,9 +36,11 @@ footer h3 {
   padding: 0;
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 0.8rem;
 }
 footer ol {
   padding-left: 1.2rem;
+  font-size: 0.8rem;
 }
 footer div {
   background: white;
@@ -281,8 +283,12 @@ main .ribbon {
   .slogan {
     padding-top: 1%;
   }
+  footer h3 {
+    font-size: 1rem;
+  }
   footer ol {
     line-height: 2;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
