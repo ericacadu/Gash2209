@@ -162,6 +162,12 @@ main .ribbon {
 .gameListContent {
   padding: 0 5% 3vmax;
 }
+.gameListContent .searchInfo {
+  margin: 0 auto 1rem;
+}
+.gameListContent .searchInfo img {
+  width: 100%;
+}
 .gameListContent .searchBar {
   border-radius: 50px;
   overflow: hidden;
@@ -303,6 +309,10 @@ main .ribbon {
   .gameListContent th,
 .gameListContent td {
     padding: 1rem 1.5rem;
+  }
+  .gameListContent .searchInfo {
+    margin-bottom: 0;
+    transform: translateY(-100%);
   }
   .gameListContent .gameBrand {
     padding: 0 2rem;

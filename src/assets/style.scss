@@ -181,6 +181,14 @@ main {
 .gameListContent {
   padding: 0 5% 3vmax;
 
+  .searchInfo {
+    margin: 0 auto 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .searchBar {
     border-radius: 50px;
     overflow: hidden;
@@ -355,6 +363,11 @@ main {
     th,
     td {
       padding: 1rem 1.5rem;
+    }
+
+    .searchInfo {
+      margin-bottom: 0;
+      transform: translateY(-100%);
     }
 
     .gameBrand {
